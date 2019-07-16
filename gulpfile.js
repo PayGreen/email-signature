@@ -1,4 +1,4 @@
-const { dest, src, watch, series } = require('gulp')
+const { dest, src, watch } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
@@ -13,9 +13,6 @@ const css = {
         outputStyle: 'compressed',
         errLogToConsole: true
     },
-    autoprefixerOpts: {
-        browsers: ['last 5 versions', '> 1%']
-    },
     watch: source + '**/*'
 }
 
@@ -23,7 +20,7 @@ function style(cb) {
     src(css.in)
         .pipe(sourcemaps.init())
         .pipe(sass(css.sassOpts))
-        .pipe(autoprefixer(css.autoprefixerOpts))
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
         .pipe(dest(css.out))
     watch(css.watch, style)
