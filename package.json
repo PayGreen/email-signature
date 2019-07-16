@@ -1,0 +1,16 @@
+{
+    "name": "watt",
+    "version": "0.0.1",
+    "scripts": {
+        "watch": "gulp"
+    },
+    "devDependencies": {
+        "del": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5"
+    },
+    "dependencies": {
+        "gulp": "^4.0.0"
+    }
+}
