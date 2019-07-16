@@ -1,32 +1,24 @@
-// variable section
-const { dest, series, src, watch } = require('gulp')
-const del = require("del")
+const { dest, src, watch, series } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
 
-const dist = "assets/css/"
-const source = "assets/sass/"
- 
-const css = { in: source + "styles.scss",
+const dist = 'assets/css'
+const source = 'assets/sass/'
+
+const css = {
+    in: source + 'styles.scss',
     out: dist,
     sassOpts: {
-        outputStyle: "compressed",
+        outputStyle: 'compressed',
         errLogToConsole: true
     },
     autoprefixerOpts: {
         browsers: ['last 5 versions', '> 1%']
     },
-    watch: source + "**/*"
+    watch: source + '**/*'
 }
- 
-// task section
- 
-function clean(cb) {
-    del([dist + "*"])
-    cb()
-}
- 
+
 function style(cb) {
     src(css.in)
         .pipe(sourcemaps.init())
@@ -37,5 +29,5 @@ function style(cb) {
     watch(css.watch, style)
     cb()
 }
- 
-exports.default = series(clean, style)
+
+exports.default = style
