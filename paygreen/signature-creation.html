@@ -12,16 +12,42 @@
 
 <body>
     <form>
-        <input type="text" />
+        <label for="name">
+            Prénom et nom
+        </label>
+        <input type="text" id="name" value="Laurent Barre" />
+
+        <label for="function1">
+            Fonction 1
+        </label>
+        <input type="text" id="function1" value="Super-héros" />
+
+        <label for="function2">
+            Fonction 2 (facultatif)
+        </label>
+        <input type="text" id="function2" value="Boulanger" />
+
+        <label for="linkedin">
+            Lien du profil LinkedIn personnel (facultatif)
+        </label>
+        <input type="url" id="linkedin" value="https://www.linkedin.com/in/olivia-gometz/" />
+        
+        <label for="mobile">
+            N° de portable (facultatif)
+        </label>
+        <input type="tel" id="mobile" value="330611223344" />
+
+        <label for="business">
+            Ligne fixe (facultatif)
+        </label>
+        <input type="tel" id="business" value="330955667788" />
     </form>
 
-    <iframe id="inlineFrameExample"
-        width="500"
-        height="400"
-        src="ressources/signature.html">
-    </iframe>
+    <iframe src="ressources/signature.html" class="loading" width="500" height="400"></iframe>
+    Pour copier, cliquez à l'intérieur du cadre, puis faites CTRL + A et CTRL + C.
 
     <script src="../assets/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/libs/jquery.inputmask.js"></script>
     <script src="../assets/js/main.js?v=0.0.1>"></script>
     <script src="../assets/js/signature.js?v=0.0.1>"></script>
 </body>
