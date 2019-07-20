@@ -22,7 +22,4 @@ var cookie = {
 
         return null;
     },
-    erase: function (name) {
-        cookie.create(name, '', -1);
-    }
 };
