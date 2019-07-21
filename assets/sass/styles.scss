@@ -1,4 +1,11 @@
 @import "variables/colors";
+@import "variables/spaces";
+@import "variables/sizes";
 
 @import "bases/normalize";
 @import "bases/general";
+
+@import "partials/form";
+@import "partials/aside";
+@import "partials/iframe";
+@import "partials/texts";

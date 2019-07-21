@@ -1,0 +1,17 @@
+iframe {
+    opacity: 1;
+    background-color: $white;
+    border: none;
+    padding: $spaceSM;
+    margin: $spaceXL auto;
+    width: 100%;
+    height: fit-content;
+    max-width: $content;
+    border-radius: $radius;
+    box-shadow: 2px 2px 20px transparentize(#000000, .9);
+    transition: all .5s;
+}
+
+.loading {
+    opacity: 0;
+}

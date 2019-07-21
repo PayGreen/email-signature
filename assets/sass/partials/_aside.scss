@@ -1,0 +1,55 @@
+aside {
+    $size: 100px;
+
+    position: relative;
+    background-color: $lightGrey;
+    padding: $spaceXL;
+
+    @media #{$minMD} {
+        padding: .1px;
+        padding-right: $spaceXL;
+    }
+
+    &:hover {
+        .st0 {
+            transform: translateY($size/4);
+        }
+
+        .st1 {
+            transform: translateY(-$size/2);
+        }
+    }
+
+    figure {
+        position: absolute;
+        transform: translateX(calc(-100% + 1px));
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        display: none;
+
+        @media #{$minMD} {
+            display: block;
+        }
+    }
+
+    svg {
+        height: calc(100% + #{$size});
+        margin-top: -$size/2;
+
+        .st0,
+        .st1 {
+            transition: all 2s;
+        }
+
+        &:hover {
+            .st0 {
+                transform: translateY(-$size/4);
+            }
+
+            .st1 {
+                transform: translateY($size/2);
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+form {
+    background-color: $green;
+    background-image: linear-gradient($green, $blue);
+    color: $white;
+    padding: .1px;
+
+    @media #{$minMD} {
+        padding-right: $spaceXL*2;
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: $spaceXL;
+
+    p {
+        margin: 0;
+        font-size: 0.8em;
+        font-style: italic;
+        margin-top: $line;
+        opacity: .6;
+    }
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .75em;
+    opacity: .7;
+}
+
+input {
+    outline: none;
+    position: relative;
+    display: block;
+    border: none;
+    border-bottom: solid $line transparentize($white, 0.2);
+    background-color: transparentize($white, 1);
+    transition: all .3s;
+    padding: $spaceXS 0;
+    width: calc(100% - #{$spaceLG});
+    max-width: 320px;
+    color: #191919;
+
+    &:hover,
+    &:active {
+        background-color: transparentize($white, 0.8);
+    }
+
+    &:focus {
+        background-color: transparentize($white, 0.6);
+        padding-left: $spaceSM;
+        padding-right: $spaceSM;
+    }
+}
