@@ -1,5 +1,5 @@
 {
-  "name": "olivia-gometz",
+  "name": "oliviagometz",
   "version": "0.0.1",
   "main": "gulpfile.js",
   "scripts": {
@@ -20,12 +20,12 @@
   "description": "Site perso",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Olivia-Gometz/olivia-gometz.github.io.git"
+    "url": "git+https://github.com/OliviaGometz/oliviagometz.github.io.git"
   },
   "author": "Olivia Gometz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Olivia-Gometz/olivia-gometz.github.io/issues"
+    "url": "https://github.com/OliviaGometz/oliviagometz.github.io/issues"
   },
-  "homepage": "https://github.com/Olivia-Gometz/olivia-gometz.github.io#readme"
+  "homepage": "https://github.com/OliviaGometz/oliviagometz.github.io#readme"
 }
