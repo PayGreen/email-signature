@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>Olivia Gometz</title>
+    <title>Créer une signature mail</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css?v=0.0.1">
-</head>
+    <link rel="stylesheet" href="../assets/css/styles.css?v=0.0.1" />
+  </head>
 
-<body>
-    <a href="paygreen/signature-creation.html">
-        Création signature
-    </a>
+  <body>
+    <form>
+      <h1>Votre signature PayGreen</h1>
 
-    <script src="assets/js/libs/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/main.js?v=0.0.1>"></script>
-</body>
+      <fieldset>
+        <label for="name"> Prénom et nom </label>
+        <input type="text" id="name" value="Laurent Barre" />
+      </fieldset>
+
+      <fieldset>
+        <label for="function1"> Fonction 1 </label>
+        <input type="text" id="function1" value="Super-héros" />
+      </fieldset>
+
+      <fieldset>
+        <label for="function2"> Fonction 2 </label>
+        <input type="text" id="function2" value="Boulanger" />
+        <p>Facultatif</p>
+      </fieldset>
+
+      <fieldset>
+        <label for="linkedin"> LinkedIn personnel </label>
+        <input
+          type="url"
+          id="linkedin"
+          value="https://www.linkedin.com/in/olivia-gometz/"
+        />
+        <p>Facultatif</p>
+      </fieldset>
+
+      <fieldset>
+        <label for="mobile"> Mobile </label>
+        <input type="tel" id="mobile" value="330611223344" />
+        <p>Facultatif</p>
+      </fieldset>
+
+      <fieldset>
+        <label for="business"> Ligne fixe </label>
+        <input type="tel" id="business" value="330222444446" />
+        <p>Facultatif</p>
+      </fieldset>
+    </form>
+
+    <aside>
+      <iframe src="ressources/signature.html" class="loading"></iframe>
+
+      <h2>Comment récupérer ma signature&nbsp;?</h2>
+
+      <ol>
+        <li>Cliquez à l'intérieur du <strong>cadre blanc</strong>.</li>
+        <li>
+          Cliquez sur <strong>CTRL + A</strong> pour sélectionner toute la
+          signature (images comprises).
+        </li>
+        <li>
+          Cliquez sur <strong>CTRL + C</strong> pour copier le contenu
+          sélectionné.
+        </li>
+        <li>
+          Rendez-vous dans vos <strong>paramètres Gmail</strong> pour coller le
+          contenu de votre signature dans l'emplacement prévu à cet effet, puis
+          <strong>enregistrez</strong>.
+        </li>
+      </ol>
+    </aside>
+
+    <script src="./assets/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/libs/jquery.inputmask.js"></script>
+    <script src="./assets/js/main.js?v=0.0.1>"></script>
+    <script src="./assets/js/signature.js?v=0.0.1>"></script>
+  </body>
 </html>
