@@ -3,16 +3,16 @@ $(document).ready(function() {
 
     if (inputs !== null) {
         inputs.forEach(function(element) {
-            for (name in element) {
-                value = element[name];
+            for (inputName in element) {
+                value = element[inputName];
 
                 if (value == '') {
-                    $('[data-remove="'+name+'"]').remove();
-                    $('[data-remove2="'+name+'"]').remove();
-                    $('[data-opacity="'+name+'"]').attr('color', '#ffffff');
+                    $('[data-remove="'+inputName+'"]').remove();
+                    $('[data-remove2="'+inputName+'"]').remove();
+                    $('[data-opacity="'+inputName+'"]').attr('color', '#ffffff');
                 }
 
-                $('[data-id="'+name+'"]').each(function() {
+                $('[data-id="'+inputName+'"]').each(function() {
                     if (value == '') {
                         $(this).remove();
                     } else {

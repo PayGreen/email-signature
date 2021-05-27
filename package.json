@@ -1,5 +1,5 @@
 {
-  "name": "oliviagometz",
+  "name": "email-signature",
   "version": "0.0.1",
   "main": "gulpfile.js",
   "scripts": {
@@ -20,12 +20,12 @@
   "description": "Site perso",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OliviaGometz/oliviagometz.github.io.git"
+    "url": "git+https://github.com/PayGreen/email-signature.github.io.git"
   },
-  "author": "Olivia Gometz",
+  "author": "PayGreen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OliviaGometz/oliviagometz.github.io/issues"
+    "url": "https://github.com/PayGreen/email-signature.github.io/issues"
   },
-  "homepage": "https://github.com/OliviaGometz/oliviagometz.github.io#readme"
+  "homepage": "https://github.com/PayGreen/email-signature.github.io#readme"
 }
